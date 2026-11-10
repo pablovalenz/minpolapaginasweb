@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
-    <title>Minpola &mdash; Diesño Web y Marketing</title>
+    <title>MINPOLA | Web, anuncios en Meta y contenido para negocios</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Muli:300,400,700,900" rel="stylesheet">
+    <meta name="description" content="MINPOLA Servicios Digitales: creamos tu web, tus anuncios en Facebook e Instagram y el contenido para redes, para que tu negocio consiga clientes por WhatsApp.">
+    <meta property="og:title" content="MINPOLA | Que te vean. Que te escriban. Que te compren.">
+    <meta property="og:description" content="Web, anuncios en Meta y contenido para negocios de Latinoamérica, todo en un solo lugar.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/minpola-logo.png">
+    <meta name="theme-color" content="#0A63F0">
+    <link rel="icon" type="image/png" href="images/minpola-logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
@@ -13,18 +22,19 @@
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
 
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
-    
+    <!-- Colores y tipografía de MINPOLA (va siempre al final) -->
+    <link rel="stylesheet" href="css/minpola.css">
+
+    <!-- META PIXEL: cuando crees tu píxel en el Administrador de eventos de Meta, pegá aquí su código. -->
+
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   
@@ -32,7 +42,7 @@
   <div id="overlayer"></div>
   <div class="loader">
     <div class="spinner-border text-primary" role="status">
-      <span class="sr-only">Bienvenidos...</span>
+      <span class="sr-only">Cargando…</span>
     </div>
   </div>
 
@@ -53,16 +63,15 @@
       
       <div class="container-fluid">
         <div class="d-flex align-items-center">
-          <div class="site-logo"><a href="index.html" class="text-uppercase">Minpola<br>DiseñoWeb</a></div>
+          <div class="site-logo"><a href="index.html"><img src="images/minpola-logo.png" alt="" width="52" height="52"><span>MINPOLA<small>SERVICIOS DIGITALES</small></span></a></div>
           <div>
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-xl-block">
                 <li><a href="#home-section" class="nav-link">Inicio</a></li>
-                <li><a href="#nosotros-section" class="nav-link">Qué hacemos</a></li>
                 <li><a href="#services-section" class="nav-link">Servicios</a></li>
-                <li><a href="ejemplos/index.html" class="nav-link">Ejemplos</a></li>
-            
-                
+                <li><a href="#proyectos-section" class="nav-link">Proyectos</a></li>
+                <li><a href="#proceso-section" class="nav-link">Cómo trabajamos</a></li>
+                <li><a href="#preguntas-section" class="nav-link">Preguntas</a></li>
               </ul>
             </nav>
           </div>
@@ -70,7 +79,7 @@
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-xl-block">
                 <!--<li><a href="#design-section" class="nav-link">Diseños</a></li>-->
-                <li class="cta"><a href="#contact-section" class="nav-link"><span class="border bg-danger rounded text-white border-danger">Contacto</span></a></li>
+                <li class="cta"><a href="https://wa.me/5491125725820" target="_blank" rel="noopener" class="js-wa"><span class="border rounded text-white">WhatsApp</span></a></li>
               </ul>
             </nav>
             <a href="#" class="d-inline-block d-xl-none site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a>
@@ -87,24 +96,24 @@
 
             <div class="owl-carousel slide-one-item-alt-text">
               <div class="slide-text">
-                <h1>BIENVENIDOS!!!</h1>
-                <p class="mb-5">En MINPOLA diseñamos tu página WEB. Administramos tus redes y te posicionamos en Google. <br>Tu crecimiento ahora es parte del nuestro.</p>
-                <p><a href="#contact-section" class="btn btn-outline-light py-3 px-5">Comencemos</a></p>
+                <h1>Que te vean. Que te escriban. Que te compren.</h1>
+                <p class="mb-5">Creamos tu web, tus anuncios en Facebook e Instagram y el contenido que los alimenta. Todo con el mismo mensaje, para que los clientes terminen escribiéndote por WhatsApp.</p>
+                <p class="portada-acciones"><a href="https://wa.me/5491125725820" target="_blank" rel="noopener" class="btn btn-wa js-wa"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.57.93.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.23-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.24 9.43-9.44 9.43m8.03-17.46A11.27 11.27 0 0 0 12.05.72C5.8.72.7 5.8.7 12.07c0 2 .52 3.95 1.52 5.67L.6 23.64l6.04-1.58a11.33 11.33 0 0 0 5.4 1.38h.01c6.26 0 11.35-5.09 11.35-11.35 0-3.03-1.18-5.88-3.32-8.03"/></svg>Cotizar por WhatsApp</a><a href="#proyectos-section" class="link-sec">Ver proyectos</a></p>
               </div>
               <div class="slide-text">
-                <h1>Páginas de CALIDAD!</h1>
-                <p class="mb-5">Diseños exclusivos al alcance de tu presupuesto sin perder calidad. <br>Pensamos los diseños basados en las necesidades de los usuarios, tus posibles clientes.</p>
-                <p><a href="#contact-section" class="btn btn-outline-light py-3 px-5">Comencemos</a></p>
+                <h2 class="h1">Una web que trabaja para vos.</h2>
+                <p class="mb-5">Páginas rápidas, pensadas primero para el celular y con un solo objetivo: que el visitante te contacte o te compre.</p>
+                <p class="portada-acciones"><a href="https://wa.me/5491125725820" target="_blank" rel="noopener" class="btn btn-wa js-wa"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.57.93.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.23-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.24 9.43-9.44 9.43m8.03-17.46A11.27 11.27 0 0 0 12.05.72C5.8.72.7 5.8.7 12.07c0 2 .52 3.95 1.52 5.67L.6 23.64l6.04-1.58a11.33 11.33 0 0 0 5.4 1.38h.01c6.26 0 11.35-5.09 11.35-11.35 0-3.03-1.18-5.88-3.32-8.03"/></svg>Cotizar por WhatsApp</a><a href="#proyectos-section" class="link-sec">Ver proyectos</a></p>
               </div>
               <div class="slide-text">
-                <h1>Precencia en redes sociales</h1>
-                <p class="mb-5">Administramos tus redes sociales. Subiendo contenido actualizado sobre tu Producto/Marca.</p>
-                <p><a href="#contact-section" class="btn btn-outline-light py-3 px-5">Comencemos</a></p>
+                <h2 class="h1">Anuncios que traen mensajes, no solo likes.</h2>
+                <p class="mb-5">Configuramos tus campañas en Meta, elegimos a quién mostrarlas y medimos qué funciona para que cada dólar invertido rinda más.</p>
+                <p class="portada-acciones"><a href="https://wa.me/5491125725820" target="_blank" rel="noopener" class="btn btn-wa js-wa"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.57.93.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.23-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.24 9.43-9.44 9.43m8.03-17.46A11.27 11.27 0 0 0 12.05.72C5.8.72.7 5.8.7 12.07c0 2 .52 3.95 1.52 5.67L.6 23.64l6.04-1.58a11.33 11.33 0 0 0 5.4 1.38h.01c6.26 0 11.35-5.09 11.35-11.35 0-3.03-1.18-5.88-3.32-8.03"/></svg>Cotizar por WhatsApp</a><a href="#proyectos-section" class="link-sec">Ver proyectos</a></p>
               </div>
               <div class="slide-text">
-                <h1>Somos lo que necesitás</h1>
-                <p class="mb-5">Brindamos Calidad, Precio y Atención al cliente. <br>Somos claros con los precios y no ponemos letra chica.</p>
-                <p><a href="#contact-section" class="btn btn-outline-light py-3 px-5">Comencemos</a></p>
+                <h2 class="h1">Contenido que frena el scroll.</h2>
+                <p class="mb-5">Posts, carruseles, Reels y animaciones que muestran lo que vendés y terminan con una invitación a escribirte.</p>
+                <p class="portada-acciones"><a href="https://wa.me/5491125725820" target="_blank" rel="noopener" class="btn btn-wa js-wa"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.57.93.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.23-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.24 9.43-9.44 9.43m8.03-17.46A11.27 11.27 0 0 0 12.05.72C5.8.72.7 5.8.7 12.07c0 2 .52 3.95 1.52 5.67L.6 23.64l6.04-1.58a11.33 11.33 0 0 0 5.4 1.38h.01c6.26 0 11.35-5.09 11.35-11.35 0-3.03-1.18-5.88-3.32-8.03"/></svg>Cotizar por WhatsApp</a><a href="#proyectos-section" class="link-sec">Ver proyectos</a></p>
               </div>
             </div>
 
@@ -112,15 +121,15 @@
           <div class="col-lg-6 ml-auto"  data-aos="fade-up" data-aos-delay="100">
                         
             <div class="owl-carousel slide-one-item-alt">
-              <img src="images/img_1.jpg" alt="Image" class="img-fluid">
-              <img src="images/img_2.jpg" alt="Image" class="img-fluid">
-              <img src="images/img_3.jpg" alt="Image" class="img-fluid">
-              <img src="images/img_4.jpg" alt="Image" class="img-fluid">
+              <img src="images/img_1.jpg" alt="Equipo trabajando en una computadora portátil" class="img-fluid">
+              <img src="images/img_2.jpg" alt="Personas trabajando en un proyecto digital" class="img-fluid">
+              <img src="images/img_3.jpg" alt="Trabajo en equipo con computadoras" class="img-fluid">
+              <img src="images/img_4.jpg" alt="Escritorio de trabajo" class="img-fluid">
             </div>
 
             <div class="owl-custom-direction">
-              <a href="#" class="custom-prev"><span class="icon-keyboard_arrow_left"></span></a>
-              <a href="#" class="custom-next"><span class="icon-keyboard_arrow_right"></span></a>
+              <a href="#" class="custom-prev" aria-label="Anterior"><span class="icon-keyboard_arrow_left"></span></a>
+              <a href="#" class="custom-next" aria-label="Siguiente"><span class="icon-keyboard_arrow_right"></span></a>
             </div>
 
           </div>
@@ -137,14 +146,15 @@
           <div class="col-lg-5 mr-auto mb-5"  data-aos="fade-up">
 
             <div class="mb-5">
-              <h2 class="section-title">Amamos nuestro trabajo</h2>
-              <p>Amamos lo que hacemos y trabajamos para hacer de la INTERNET un lugar mejor, ofrecemos atención, calidad y predisposición en cada cción.</p>
-              <p class="mb-5">Si llegaste hasta acá es porque sabés que necesitás "PRESENCIA EN INTERNET". <br>Día a día miles de personas buscan en internet información referida con tu marca/producto. Al tener presencia a través de un sitio web estas posibles búsquedas entrarían en tu Sitio el cual les va a brindar información de tu producto, ubicación, CONTACTO y así aumentar tu agenda de clientes. <br> <br> Quien no tiene presencia en internet se pierde de:</p>
+              <h2 class="section-title">Publicar no es lo mismo que vender.</h2>
+              <p>La mayoría de los negocios tiene las piezas sueltas: una web que nadie visita, anuncios que no llevan a ningún lado y posteos que no piden nada.</p>
+              <p class="mb-4">En MINPOLA armamos las tres partes juntas, para que cada una empuje a la siguiente y el resultado sea el mismo: más personas escribiéndote para comprar.</p>
 
               <ul class="ul-check list-unstyled success">
-                <li>Incrementar exponencialmente su clientela abitual</li>
-                <li>Actualizarse a las nuevas tendencias de mercado</li>
-                <li>Continuar con el progreso de la marca/producto</li>
+                <li>Un solo equipo para web, anuncios y contenido</li>
+                <li>Entregas rápidas, con herramientas modernas e inteligencia artificial</li>
+                <li>Revisiones hasta que quedes conforme</li>
+                <li>Comunicación directa por WhatsApp durante todo el proyecto</li>
               </ul>
             </div>
 
@@ -155,11 +165,11 @@
             <div class="image-absolute-box">
               <div class="box">
                 <div class="icon-wrap"><span class="flaticon-vector"></span></div>
-                <h3>PRESENCIA EN INTERNET</h3>
-                <p>Tus clientes te encuentran con facilidad, mostrás tus productos de forma facil, construir relaciones con tus clientes y clientes potenciales, promocionar tu marca de manera efectiva.</p>
-                <p class="mb-0">Consultanos <a href="#contact-section" class="text-danger">Ahora</a></p>
+                <h3>Todo en un solo lugar</h3>
+                <p>No coordinás a un diseñador, un programador y un publicista. Hablás con nosotros y todo sale con el mismo mensaje y estilo.</p>
+                <p class="mb-0"><a href="#proceso-section">Ver cómo trabajamos</a></p>
               </div>
-              <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+              <img src="images/img_22.jpg" alt="Personas trabajando juntas en un proyecto" class="img-fluid">
             </div>
           </div>
         </div>
@@ -171,8 +181,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 mb-5">
-            <h2 class="section-title">Servicios</h2>
-            <p>En nuestros servicios vas a encontrar distintas posibilidades de presencia acordes a tu presupuesto y necesidades. </p>
+            <h2 class="section-title">Lo que hacemos por tu negocio</h2>
+            <p>Podés contratar un servicio o el combo completo. Te pasamos una propuesta con precio cerrado según lo que necesites.</p>
           </div>
         </div>
 
@@ -180,180 +190,232 @@
 
         
       <div class="owl-carousel nonloop-block-14">
-        
+
+        <div class="service">
+          <div>
+            <span class="custom-icon-wrap"><span class="flaticon-monitor"></span></span>
+            <h3>Web y landing pages</h3>
+            <p>Sitios rápidos y pensados para el celular, con un objetivo claro: que te contacten.</p>
+            <ul><li>Landing pages para campañas</li><li>Sitios web para tu negocio</li><li>Textos escritos para vender</li><li>Botón directo a tu WhatsApp</li></ul>
+          </div>
+        </div>
+
         <div class="service">
           <div>
             <span class="custom-icon-wrap"><span class="flaticon-reload"></span></span>
-            <h3>Página Web One Page</h3>
-            <p>Página web de una sola cara basada en plantillas. Diseño moderno, limpio y fresco. Toda la información se encuentra en la página principal. Es ideal para negocios pequeños; landing pages para campañas de mercadeo digital, página de eventos o páginas de personas naturales. <br>Incluye Hosting y Dominio por un año "Tunombre.com" (sujeto a disponibilidad) </p>
-          </div>
-        </div>
-
-
-        <div class="service">
-          <div>
-            <span class="custom-icon-wrap"><span class="flaticon-download"></span></span>
-            <h3>Página Web MultiPage</h3>
-            <p>Esta página web sencilla dividida en varias páginas basada en plantillas, te permite tener todas las secciones que desees, y más de una cara; meramente informativa, con un diseño actual y fresco. <br>Incluye Hosting y Dominio por un año "Tunombre.com" (sujeto a disponibilidad)</p>
-          </div>
-        </div>
-
-        <!--<div class="service">
-          <div>
-            <span class="custom-icon-wrap"><span class="flaticon-monitor"></span></span>
-            <h3>Pagina Web + Campaña en Google Ads (pocisionar primero e Google)</h3>
-            <p>Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-          </div>
-        </div>-->
-
-        <div class="service">
-          <div>
-            <span class="custom-icon-wrap"><span class="flaticon-chat"></span></span>
-            <h3>Redes 15</h3>
-            <p>Manejamos sus redes sociales, mejorandolas adaptandolas a las tendencias del mercado, logrando mayor tráfico y aumento de seguidores. Plan diseñado para profesionales y empresas que desean presencia básica en redes sociales con una frecuencia de publicación baja.⁣ <br>Este servicio incluye: Manejo de 2 cuenta de redes sociales⁣, Diseño de 15 posts⁣ mensuales, Diseño de perfil (portada, historias destacadas y avatar)⁣, Diseño de 5 historias⁣, Redacción de contenidos</p>
-          </div>
-        </div>
-
-        <div class="service">
-          <div>
-            <span class="custom-icon-wrap"><span class="flaticon-glasses"></span></span>
-            <h3>Redes 30</h3>
-            <p>Las redes sociales te permiten decir lo que el público quiere escuchar, y escuchar lo que el público quiere decir.⁣ Plan diseñado para profesionales y empresas que desean presencia en redes sociales con una alta frecuencia de publicación.⁣ Incluye: Manejo de hasta 2 cuentas de redes sociales⁣, Diseño de 30 posts mensuales⁣, Diseño de perfil (portada, historias destacadas y avatar), Diseño de 10 historias⁣</p>
+            <h3>Anuncios en Meta</h3>
+            <p>Campañas en Facebook e Instagram que llevan a las personas correctas hasta tu WhatsApp o tu web.</p>
+            <ul><li>Configuración de campañas y píxel</li><li>Segmentación de público</li><li>Pruebas de anuncios</li><li>Reportes claros de resultados</li></ul>
           </div>
         </div>
 
         <div class="service">
           <div>
             <span class="custom-icon-wrap"><span class="flaticon-vector"></span></span>
-            <h3>Full <br>Páginas + Redes</h3>
-            <p>Plan FULL incluye Página WEB + Plan Redes 15.</p>
+            <h3>Posts, carruseles y banners</h3>
+            <p>Diseños con tu estilo de marca, hechos para que la gente se detenga y entienda lo que vendés.</p>
+            <ul><li>Posts y carruseles</li><li>Banners para web y anuncios</li><li>Historias destacadas y perfil</li><li>Plantillas listas para usar</li></ul>
           </div>
         </div>
 
+        <div class="service">
+          <div>
+            <span class="custom-icon-wrap"><span class="flaticon-glasses"></span></span>
+            <h3>Reels y motion graphics</h3>
+            <p>Videos cortos y animaciones con un gancho en los primeros segundos y un cierre que invita a escribir.</p>
+            <ul><li>Reels y videos cortos</li><li>Animación de logo y producto</li><li>Edición con subtítulos</li><li>Versiones para anuncios</li></ul>
+          </div>
+        </div>
 
+        <div class="service">
+          <div>
+            <span class="custom-icon-wrap"><span class="flaticon-chat"></span></span>
+            <h3>Copys que venden</h3>
+            <p>Los textos de tu web, tus anuncios y tus posteos, escritos para convertir y no solo para decorar.</p>
+            <ul><li>Textos para anuncios</li><li>Textos para web</li><li>Guiones para Reels</li><li>Mensajes para responder consultas</li></ul>
+          </div>
+        </div>
+
+        <div class="service">
+          <div>
+            <span class="custom-icon-wrap"><span class="flaticon-download"></span></span>
+            <h3>Plan completo</h3>
+            <p>Web, anuncios y contenido trabajando juntos, con un mismo equipo y un mismo mensaje.</p>
+            <ul><li>Todo lo anterior integrado</li><li>Un solo interlocutor</li><li>Seguimiento de resultados</li><li>Mejoras cada semana</li></ul>
+          </div>
+        </div>
 
       </div>
 
     </div>
 
 
-    <!--<div class="site-section section-2" id="design-section" data-aos="fade">
+    <div class="site-section" id="proyectos-section">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 mb-5">
-            <h2 class="section-title">Diseños	</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+          <div class="col-lg-7 mb-4">
+            <h2 class="section-title">Así podría verse tu marca</h2>
+            <p>Conceptos de muestra creados para negocios ficticios. Te muestran el tipo de piezas que diseñamos y cómo se conectan entre sí.</p>
           </div>
         </div>
-
       </div>
-        
 
-
-
-      <div class="owl-carousel nonloop-block-13">
-
-          <a class="work-thumb" href="images/img_1.jpg" data-fancybox="gallery">
-            <div class="work-text">
-              <h3>Project Name Here</h3>
-              <span class="category">Website</span>
-            </div>
-            <img src="images/img_1.jpg" alt="Image" class="img-fluid">
-          </a> 
-          
-          <a class="work-thumb" href="images/img_2.jpg" data-fancybox="gallery">
-            <div class="work-text">
-              <h3>Project Name Here</h3>
-              <span class="category">Illustration</span>
-            </div>
-            <img src="images/img_2.jpg" alt="Image" class="img-fluid">
-          </a>
-
-          <a class="work-thumb" href="images/img_3.jpg" data-fancybox="gallery">
-            <div class="work-text">
-              <h3>Project Name Here</h3>
-              <span class="category">Branding</span>
-            </div>
-            <img src="images/img_3.jpg" alt="Image" class="img-fluid">
-          </a>
-
-          <a class="work-thumb" href="images/img_4.jpg" data-fancybox="gallery">
-            <div class="work-text">
-              <h3>Project Name Here</h3>
-              <span class="category">Web Development</span>
-            </div>
-            <img src="images/img_4.jpg" alt="Image" class="img-fluid">
-          </a>
-
-          <a class="work-thumb" href="images/img_1.jpg" data-fancybox="gallery">
-            <div class="work-text">
-              <h3>Project Name Here</h3>
-              <span class="category">Design</span>
-            </div>
-            <img src="images/img_1.jpg" alt="Image" class="img-fluid">
-          </a>
-      </div>
-    
-
-    </div>-->
-
-
-
-
-
-
-
-
-
-
-    <!--<div class="site-section"  data-aos="fade">
       <div class="container">
-        <a href="https://vimeo.com/325355987" class="video-img-bg" data-fancybox data-ratio="2">
-          <span class="play-button">
-            <span class="icon-play"></span>
-          </span>
-          <img src="images/video_bg.jpg" alt="Image" class="img-fluid">
-        </a>
+        <div class="row">
+          <div class="col-sm-6 col-lg-3 mb-5">
+            <a class="work-thumb" href="images/proyecto-andes-propiedades.jpg" data-fancybox="proyectos" data-caption="Andes Propiedades: Landing page para captar compradores (concepto de muestra)">
+              <img src="images/proyecto-andes-propiedades.jpg" alt="Landing page para captar compradores para Andes Propiedades, concepto de muestra" class="img-fluid" width="700" height="750">
+              <div class="work-text">
+                <h3>Andes Propiedades</h3>
+                <span class="category">Landing page para captar compradores</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-5">
+            <a class="work-thumb" href="images/proyecto-brasa-parrilla.jpg" data-fancybox="proyectos" data-caption="Brasa Parrilla: Anuncio de Meta que lleva a WhatsApp (concepto de muestra)">
+              <img src="images/proyecto-brasa-parrilla.jpg" alt="Anuncio de Meta que lleva a WhatsApp para Brasa Parrilla, concepto de muestra" class="img-fluid" width="700" height="750">
+              <div class="work-text">
+                <h3>Brasa Parrilla</h3>
+                <span class="category">Anuncio de Meta que lleva a WhatsApp</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-5">
+            <a class="work-thumb" href="images/proyecto-nativa-estetica.jpg" data-fancybox="proyectos" data-caption="Nativa Estética: Carrusel educativo que termina en reserva (concepto de muestra)">
+              <img src="images/proyecto-nativa-estetica.jpg" alt="Carrusel educativo que termina en reserva para Nativa Estética, concepto de muestra" class="img-fluid" width="700" height="750">
+              <div class="work-text">
+                <h3>Nativa Estética</h3>
+                <span class="category">Carrusel educativo que termina en reserva</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-5">
+            <a class="work-thumb" href="images/proyecto-kuma-cafe.jpg" data-fancybox="proyectos" data-caption="Kuma Café: Reel animado para anuncios y redes (concepto de muestra)">
+              <img src="images/proyecto-kuma-cafe.jpg" alt="Reel animado para anuncios y redes para Kuma Café, concepto de muestra" class="img-fluid" width="700" height="750">
+              <div class="work-text">
+                <h3>Kuma Café</h3>
+                <span class="category">Reel animado para anuncios y redes</span>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
-    </div>-->
+    </div>
+
+    <div class="site-section" id="proceso-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 mb-5">
+            <h2 class="section-title">De la primera charla a los primeros mensajes</h2>
+            <p>Un proceso simple, en cuatro pasos, para que sepas siempre qué viene después.</p>
+          </div>
+        </div>
+        <ol class="escalones">
+          <li class="escalon"><span class="num">1</span><h3>Charla por WhatsApp</h3><p>Nos contás qué vendés y a quién. Te respondemos con ideas concretas para tu negocio.</p></li>
+          <li class="escalon"><span class="num">2</span><h3>Propuesta y plan</h3><p>Te enviamos qué vamos a hacer, en cuánto tiempo y cuánto cuesta. Sin sorpresas.</p></li>
+          <li class="escalon"><span class="num">3</span><h3>Creación</h3><p>Diseñamos la web, los anuncios y el contenido. Revisás y ajustamos hasta que quede como querés.</p></li>
+          <li class="escalon"><span class="num">4</span><h3>Lanzamiento</h3><p>Publicamos, activamos las campañas y seguimos los resultados para mejorar cada semana.</p></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="site-section" id="preguntas-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-5">
+            <h2 class="section-title">Preguntas frecuentes</h2>
+            <p>¿Tenés otra duda? Escribinos por WhatsApp y te respondemos.</p>
+          </div>
+          <div class="col-lg-7 ml-auto">
+            <div class="faq-lista">
+              <details>
+                <summary>¿Trabajan con negocios de cualquier país?<span class="mas" aria-hidden="true"></span></summary>
+                <p>Sí. Trabajamos 100 % en línea con negocios de toda Latinoamérica. Las reuniones y el seguimiento se hacen por WhatsApp o videollamada.</p>
+              </details>
+              <details>
+                <summary>¿Cuánto cuesta?<span class="mas" aria-hidden="true"></span></summary>
+                <p>Depende de lo que necesites: no es lo mismo un banner que una web con campaña y contenido mensual. Contanos tu proyecto por WhatsApp y te enviamos una propuesta con precio cerrado.</p>
+              </details>
+              <details>
+                <summary>¿El dinero de los anuncios está incluido?<span class="mas" aria-hidden="true"></span></summary>
+                <p>No. La inversión en anuncios se paga directamente a Meta desde tu cuenta, así siempre tenés el control. Nosotros cobramos por crear y gestionar las campañas, y te ayudamos a definir cuánto conviene invertir.</p>
+              </details>
+              <details>
+                <summary>¿Puedo contratar un solo servicio?<span class="mas" aria-hidden="true"></span></summary>
+                <p>Claro. Podés pedir solo una landing, solo anuncios o solo contenido. Si después querés sumar más, todo va a mantener el mismo estilo.</p>
+              </details>
+              <details>
+                <summary>¿Necesito tener fotos y textos listos?<span class="mas" aria-hidden="true"></span></summary>
+                <p>No. Si tenés material lo usamos, y si no, escribimos los textos y creamos las imágenes y videos que hagan falta.</p>
+              </details>
+              <details>
+                <summary>¿Cuánto tarda un proyecto?<span class="mas" aria-hidden="true"></span></summary>
+                <p>Depende del alcance. Antes de empezar te damos una fecha de entrega concreta para cada parte del proyecto.</p>
+              </details>
+              <details>
+                <summary>¿Qué pasa si algo no me gusta?<span class="mas" aria-hidden="true"></span></summary>
+                <p>Lo cambiamos. Cada entrega incluye revisiones para ajustar diseño, textos y detalles hasta que quedes conforme.</p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    
 
     <div class="site-section" id="contact-section"  data-aos="fade">
       <div class="container">
 
         <div class="row align-items-center">
           <div class="col-md-5 order-1 order-md-2 mb-5 mb-md-0">
-            <img src="images/about_1.jpg" alt="Image" class="img-fluid">
+            <div class="contacto-wa">
+              <h3>La forma más rápida: WhatsApp</h3>
+              <p class="mb-4">Contanos qué vendés y te respondemos con ideas para que te encuentren, te escriban y te compren.</p>
+              <p><a href="https://wa.me/5491125725820" target="_blank" rel="noopener" class="btn btn-wa js-wa"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.57.93.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.23-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.24 9.43-9.44 9.43m8.03-17.46A11.27 11.27 0 0 0 12.05.72C5.8.72.7 5.8.7 12.07c0 2 .52 3.95 1.52 5.67L.6 23.64l6.04-1.58a11.33 11.33 0 0 0 5.4 1.38h.01c6.26 0 11.35-5.09 11.35-11.35 0-3.03-1.18-5.88-3.32-8.03"/></svg>Hablar con MINPOLA</a></p>
+              <p class="mb-0 mt-4">También estamos en Instagram: <a class="ig" href="https://www.instagram.com/minpolaserviciosdigitales/" target="_blank" rel="noopener">@minpolaserviciosdigitales</a></p>
+            </div>
           </div>
           <div class="col-md-6 mr-auto order-2 order-md-1">
             
-            <h2 class="section-title mb-3">Contacto</h2>
-            <p class="mb-5">Tu consulta no molesta. Despejamos todas tus dudas. Envianos un mensaje</p>
+            <h2 class="section-title mb-3">Tu próximo cliente ya está en Instagram</h2>
+            <p class="form-titulo mt-4">¿Preferís escribirnos por email?</p>
+            <p class="mb-4">Dejanos tus datos y te respondemos a la brevedad.</p>
           
-          <!--FORLUMARIO -->
+          <!-- FORMULARIO -->
             <form method="post" action="formulario.php">
               <div class="form-group row">
                 <div class="col-md-6 mb-4">
-                  <input type="text" class="form-control" name="nombre"  id="nombre" placeholder="Nombre">
+                  <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre" aria-label="Nombre" required>
                 </div>
                 <div class="col-md-6">
-                  <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Apellido">
+                  <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Apellido" aria-label="Apellido">
                 </div>
               </div>
 
               <div class="form-group row">
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="telefono" id="telefono" placeholder="Teléfono">
+                  <input type="tel" class="form-control" name="telefono" id="telefono" placeholder="WhatsApp o teléfono" aria-label="WhatsApp o teléfono">
                 </div>
               </div>
 
               <div class="form-group row">
                 <div class="col-md-12">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" aria-label="Email" required>
                 </div>
               </div>
               <div class="form-group row">
                 <div class="col-md-12">
-                  <textarea class="form-control" id="mensaje" name="mensaje" cols="30" rows="10" placeholder="Escribe aquí tu mensaje."></textarea>
+                  <textarea class="form-control" id="mensaje" name="mensaje" cols="30" rows="6" placeholder="¿Qué vendés y qué necesitás?" aria-label="Mensaje" required></textarea>
                 </div>
               </div>
 
@@ -377,32 +439,27 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <h3>Nosotros</h3>
-            <p>Cuando las cosas se realizan con Pasión, los resultados son apasionantes y sus conclusiones exitosas. <br>Queremos que seas parte del Éxito</p>
+            <img class="footer-logo" src="images/minpola-logo.png" alt="Logo de MINPOLA Servicios Digitales" width="84" height="84" loading="lazy">
+            <p>Web, anuncios en Meta y contenido para negocios de Latinoamérica. Todo en un solo lugar.</p>
           </div>
 
           <div class="col-md-3 ml-auto">
-            <h3>Links</h3>
+            <h3>Secciones</h3>
             <ul class="list-unstyled footer-links">
-              <li><a href="#home-section" class="smoothscroll">Inicio</a></li>
-              <li><a href="#nosotros-section" class="smoothscroll">¿Qué hacemos?</a></li>
               <li><a href="#services-section" class="smoothscroll">Servicios</a></li>
-              <!--<li><a href="#design-section" class="smoothscroll">Diseños</a></li>-->
-              <li><a href="#contact-section" class="smoothscroll">Contacto</a></li>
-              
+              <li><a href="#proyectos-section" class="smoothscroll">Proyectos</a></li>
+              <li><a href="#proceso-section" class="smoothscroll">Cómo trabajamos</a></li>
+              <li><a href="#preguntas-section" class="smoothscroll">Preguntas frecuentes</a></li>
             </ul>
           </div>
 
-         <!-- <div class="col-md-4">
-            <h3>Subscribite</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt incidunt iure iusto architecto? Numquam, natus?</p>
-            <form action="#">
-              <div class="d-flex mb-5">
-                <input type="text" class="form-control rounded-0" placeholder="Email">
-                <input type="submit" class="btn btn-primary rounded-0" value="Subscribe">
-              </div>
-            </form>
-          </div>-->
+          <div class="col-md-3">
+            <h3>Contacto</h3>
+            <ul class="list-unstyled footer-links">
+              <li><a href="https://wa.me/5491125725820" target="_blank" rel="noopener" class="js-wa">WhatsApp +54 9 11 2572-5820</a></li>
+              <li><a href="https://www.instagram.com/minpolaserviciosdigitales/" target="_blank" rel="noopener">Instagram</a></li>
+            </ul>
+          </div>
 
         </div>
 
@@ -411,7 +468,7 @@
             <div class="border-top pt-5">
               <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> Edición:  <a href="https://minpolapaginasweb.site" target="_blank" >MINPOLA Páginas WEB</a> <br> Plantilla creada <i class="icon-heart text-danger" aria-hidden="true"></i> con <a href="https://colorlib.com" target="_blank" >Colorlib</a>  -  Imagenes: <a href="https://pixabay.com/es/" target="_blank" >Pixabay </a> 
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> MINPOLA Servicios Digitales <br> Plantilla creada <i class="icon-heart text-danger" aria-hidden="true"></i> con <a href="https://colorlib.com" target="_blank" >Colorlib</a>  -  Imagenes: <a href="https://pixabay.com/es/" target="_blank" >Pixabay </a> 
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
             
@@ -426,6 +483,8 @@
     
   </div> <!-- .site-wrap -->
 
+  <a class="wa-flot js-wa" href="https://wa.me/5491125725820" target="_blank" rel="noopener" aria-label="Escribir a MINPOLA por WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.57.93.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.23-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.24 9.43-9.44 9.43m8.03-17.46A11.27 11.27 0 0 0 12.05.72C5.8.72.7 5.8.7 12.07c0 2 .52 3.95 1.52 5.67L.6 23.64l6.04-1.58a11.33 11.33 0 0 0 5.4 1.38h.01c6.26 0 11.35-5.09 11.35-11.35 0-3.03-1.18-5.88-3.32-8.03"/></svg></a>
+
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
   <script src="js/popper.min.js"></script>
@@ -435,9 +494,17 @@
   <script src="js/aos.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/jquery.sticky.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    // Mensaje que llega precargado al abrir WhatsApp
+    var mensajeWA = "Hola MINPOLA, vi su página y quiero hacer crecer mi negocio. Mi negocio es: ";
+    document.querySelectorAll('.js-wa').forEach(function (a) {
+      a.href = "https://wa.me/5491125725820?text=" + encodeURIComponent(mensajeWA);
+      // Si instalás el píxel de Meta, cada clic se registra como "Contact"
+      a.addEventListener('click', function () { if (typeof fbq === 'function') fbq('track', 'Contact'); });
+    });
+  </script>
     
   
   </body>

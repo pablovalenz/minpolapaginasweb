@@ -1,0 +1,169 @@
+/* =========================================================
+   MINPOLA: ajustes de marca sobre la plantilla Colorlib
+   Tipografía: Montserrat (la misma familia que el logo)
+   Colores: los del logo
+   Este archivo se carga después de style.css y lo sobrescribe.
+   ========================================================= */
+:root{
+  --azul:#0A63F0;
+  --azul-claro:#0A6CF5;
+  --azul-hondo:#0337A8;
+  --pizarra:#1F2533;
+  --hielo:#EEF3FB;
+  --celeste:#9CCBFF;
+  --gris:#5B6475;
+  --wa:#25D366;
+}
+
+/* ---------- Tipografía ---------- */
+body{font-family:'Montserrat',system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--gris);font-weight:400}
+h1,h2,h3,h4,h5,.h1,.h2,.h3,.h4,.h5,.site-logo,.section-title,.form-control{font-family:'Montserrat',system-ui,sans-serif}
+h1,h2,h3,h4,h5,.h1,.h2,.h3,.h4,.h5{text-transform:none;letter-spacing:-.02em}
+.section-title{color:var(--pizarra);font-weight:800;font-size:clamp(2rem,4vw,3rem);line-height:1.1;text-transform:none}
+a{color:var(--azul)}
+a:hover{color:var(--azul-hondo)}
+:focus-visible{outline:3px solid var(--celeste);outline-offset:3px}
+::selection{background:var(--azul);color:#fff}
+
+/* ---------- Botones ---------- */
+.btn{font-weight:700;border-radius:999px;text-transform:none;letter-spacing:0}
+.btn-primary{background:var(--azul);border-color:var(--azul)}
+.btn-primary:hover,.btn-primary:focus{background:var(--azul-hondo);border-color:var(--azul-hondo)}
+.btn-wa{display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--azul-hondo);padding:16px 28px;font-size:1rem;box-shadow:0 12px 30px rgba(1,20,70,.35)}
+.btn-wa:hover{color:var(--azul-hondo);transform:translateY(-2px)}
+.btn-wa svg{width:22px;height:22px;flex:none}
+.btn-wa.solido{background:var(--azul);color:#fff;box-shadow:0 12px 30px rgba(10,99,240,.3)}
+.btn-wa.solido:hover{background:var(--azul-hondo);color:#fff}
+
+/* ---------- Carga inicial ---------- */
+#overlayer{background:var(--azul-hondo)}
+.loader .spinner-border{color:#fff!important}
+
+/* ---------- Menú ---------- */
+.site-logo a{display:flex;align-items:center;gap:12px;letter-spacing:.04em;font-weight:800;line-height:1.05;color:#fff}
+.site-logo img{width:52px;height:52px;border-radius:50%;box-shadow:0 0 0 2px rgba(255,255,255,.85)}
+.site-logo small{display:block;font-size:.62rem;font-weight:600;letter-spacing:.16em;opacity:.85}
+.site-navbar .site-navigation .site-menu > li > a{font-weight:600;text-transform:none;letter-spacing:0;font-size:.95rem}
+.site-navbar .site-navigation .site-menu .cta a span{background:var(--wa)!important;border-color:var(--wa)!important;border-radius:999px;font-weight:700;padding:8px 20px}
+.site-navbar .site-navigation .site-menu .cta a:hover span{background:#1EBE5B!important}
+.sticky-wrapper.is-sticky .site-navbar{background:var(--pizarra)!important;box-shadow:0 6px 20px rgba(0,0,0,.2)}
+.sticky-wrapper.is-sticky .site-navbar .site-logo a,
+.sticky-wrapper.is-sticky .site-navbar .site-menu > li > a,
+.sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:hover,
+.sticky-wrapper.is-sticky .site-navbar .site-menu > li > a.active,
+.sticky-wrapper.is-sticky .site-menu-toggle{color:#fff!important}
+.sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:after{background:var(--celeste)!important}
+.site-mobile-menu{background:var(--pizarra)}
+.site-mobile-menu .site-nav-wrap a{color:#fff!important}
+
+/* ---------- Portada ---------- */
+.intro-section,.intro-section .container .row{height:auto;min-height:100vh}
+.intro-section .container .row{padding:150px 0 110px}
+.intro-section:before{background:linear-gradient(160deg,var(--azul-claro) 0%,#0550DB 55%,var(--azul-hondo) 100%)}
+.intro-section h1{font-size:clamp(2.1rem,3.6vw,3rem);font-weight:800;line-height:1.05;letter-spacing:-.03em}
+.intro-section p{color:#E3EEFF;font-weight:500;font-size:1.08rem}
+.intro-section .link-sec{color:#fff;font-weight:600;text-decoration:underline;text-underline-offset:5px;margin-left:18px}
+.portada-acciones{display:flex;flex-wrap:wrap;align-items:center;gap:14px 0}
+.custom-owl-carousel .owl-custom-direction a{background:var(--pizarra)}
+.custom-owl-carousel .owl-custom-direction a:hover{background:var(--azul)}
+.custom-owl-carousel .owl-custom-direction a span{color:#fff}
+@media (max-width:991.98px){
+  .custom-owl-carousel .col-lg-5{margin-top:0}
+  .intro-section .container .row{padding:120px 0 80px}
+  .intro-section .col-lg-6{margin-top:40px}
+  .intro-section .slide-text,.intro-section .slide-text h1,.intro-section .slide-text .h1,.intro-section .slide-text p{text-align:left!important}
+  .intro-section .link-sec{margin-left:0;margin-top:6px;display:inline-block}
+  .portada-acciones{flex-direction:column;align-items:flex-start;gap:16px}
+}
+
+/* ---------- Qué hacemos ---------- */
+.ul-check li{color:var(--pizarra);font-weight:600}
+.ul-check.success li:before{color:var(--azul)}
+.image-absolute-box .box{background:var(--azul-hondo);border-radius:4px}
+.image-absolute-box .box h3{color:#fff;font-weight:800;font-size:1.3rem}
+.image-absolute-box .box p{color:#E3EEFF}
+.image-absolute-box .box a{color:#fff;font-weight:700;text-decoration:underline}
+.image-absolute-box img{border-radius:4px}
+
+/* ---------- Servicios ---------- */
+#nosotros-section{padding-top:6em}
+#services-section{background:var(--pizarra)!important}
+#services-section .section-title{color:#fff}
+#services-section > .container p{color:#C3CBDA}
+.service{border-radius:0 0 6px 6px}
+.service h3{color:var(--pizarra);font-weight:800;font-size:1.3rem;line-height:1.2}
+.service p{color:var(--gris)}
+.service ul{padding-left:0;list-style:none;margin:14px 0 0}
+.service li{position:relative;padding-left:20px;margin-bottom:6px;color:var(--pizarra);font-weight:500;font-size:.95rem}
+.service li:before{content:"";position:absolute;left:0;top:.55em;width:9px;height:9px;border-radius:2px;background:var(--azul)}
+.service:before{background:var(--azul)}
+.service:after{background:var(--azul-hondo)}
+.nonloop-block-14 .owl-dots .owl-dot span{background:rgba(255,255,255,.3)!important}
+.nonloop-block-14 .owl-dots .owl-dot.active span{background:#fff!important}
+
+/* ---------- Proyectos de muestra ---------- */
+#proyectos-section .work-thumb:after{display:none}
+#proyectos-section .work-thumb img{border-radius:6px}
+#proyectos-section .work-thumb .work-text{position:static;transform:none;opacity:1;visibility:visible;text-align:left;margin:16px 4px 0}
+#proyectos-section .work-thumb .work-text h3{color:var(--pizarra);font-size:1.15rem;font-weight:800}
+#proyectos-section .work-thumb .work-text .category{color:var(--gris);text-transform:none;font-size:.92rem}
+#proyectos-section .work-thumb{transform:none}
+#proyectos-section .work-thumb:hover{transform:translateY(-6px)}
+#proyectos-section .work-thumb .work-text .category{line-height:1.45;display:block;margin-top:4px}
+
+/* ---------- Proceso ---------- */
+#proceso-section{background:var(--hielo)}
+.escalones{display:flex;align-items:flex-end;gap:16px;margin:10px 0 0;padding:0;list-style:none}
+.escalon{flex:1;color:#fff;border-radius:16px 16px 0 0;padding:28px 24px 34px;display:flex;flex-direction:column}
+.escalon:nth-child(1){min-height:240px;background:#3F86F5}
+.escalon:nth-child(2){min-height:290px;background:#2172F2}
+.escalon:nth-child(3){min-height:340px;background:var(--azul)}
+.escalon:nth-child(4){min-height:390px;background:var(--azul-hondo)}
+.escalon .num{font-size:3rem;font-weight:800;line-height:1;opacity:.45}
+.escalon h3{color:#fff;font-size:1.2rem;font-weight:800;margin:auto 0 8px;padding-top:20px}
+.escalon p{color:#E3EEFF;font-size:.95rem;margin:0}
+#proceso-section.site-section{padding-bottom:0}
+@media (max-width:991.98px){
+  .escalones{flex-wrap:wrap}
+  .escalon{flex:1 1 calc(50% - 16px);min-height:0!important;border-radius:16px}
+  #proceso-section.site-section{padding-bottom:5em}
+}
+@media (max-width:575.98px){.escalon{flex-basis:100%}}
+
+/* ---------- Preguntas frecuentes ---------- */
+.faq-lista{border-top:2px solid var(--pizarra)}
+.faq-lista details{border-bottom:1px solid #D5DCE8}
+.faq-lista summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;font-weight:700;font-size:1.08rem;color:var(--pizarra)}
+.faq-lista summary::-webkit-details-marker{display:none}
+.faq-lista .mas{flex:none;width:30px;height:30px;border-radius:50%;background:var(--hielo);position:relative}
+.faq-lista .mas:before,.faq-lista .mas:after{content:"";position:absolute;left:50%;top:50%;width:12px;height:2px;background:var(--azul);transform:translate(-50%,-50%);transition:transform .25s}
+.faq-lista .mas:after{transform:translate(-50%,-50%) rotate(90deg)}
+.faq-lista details[open] .mas{background:var(--azul)}
+.faq-lista details[open] .mas:before,.faq-lista details[open] .mas:after{background:#fff}
+.faq-lista details[open] .mas:after{transform:translate(-50%,-50%) rotate(0)}
+.faq-lista details p{padding:0 46px 22px 0;margin:0}
+
+/* ---------- Contacto ---------- */
+#contact-section .contacto-wa{background:linear-gradient(160deg,var(--azul-claro),var(--azul-hondo));color:#fff;border-radius:6px;padding:36px}
+#contact-section .contacto-wa h3{color:#fff;font-weight:800;font-size:1.5rem}
+#contact-section .contacto-wa p{color:#E3EEFF}
+#contact-section .contacto-wa .ig{color:#fff;font-weight:600;text-decoration:underline;text-underline-offset:4px}
+#contact-section .form-control{border-radius:6px}
+#contact-section .form-control:focus{border-color:var(--azul)}
+.form-titulo{color:var(--pizarra);font-weight:800;font-size:1.2rem;margin-bottom:6px}
+
+/* ---------- Pie ---------- */
+.footer-section{background:var(--pizarra)!important;color:#C3CBDA}
+.footer-section h3{color:#fff;text-transform:none;letter-spacing:0;font-size:1.05rem;font-weight:800}
+.footer-section a{color:#fff}
+.footer-links a{white-space:nowrap}
+.footer-section a:hover{color:var(--celeste)}
+.footer-section .border-top{border-color:rgba(255,255,255,.15)!important}
+.footer-logo{width:84px;height:84px;border-radius:50%;box-shadow:0 0 0 3px #fff;margin-bottom:18px}
+
+/* ---------- WhatsApp flotante ---------- */
+.wa-flot{position:fixed;right:20px;bottom:20px;z-index:3000;width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 12px 30px rgba(0,0,0,.28);transition:transform .15s}
+.wa-flot:hover{transform:scale(1.07)}
+.wa-flot svg{width:32px;height:32px;color:#fff}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
